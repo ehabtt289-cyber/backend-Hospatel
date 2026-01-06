@@ -30,6 +30,14 @@ app.use('/appointment', Appointment);
 app.use('/departments', Department);
 app.use("/uploads", express.static("uploads"));
 
+  
+// send requset to the srever in 5 minutes
+app.get('/api/health', (req , res)=>{
+   console.log(`Se`)
+    res.status(200).send('ok')
+})
+
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

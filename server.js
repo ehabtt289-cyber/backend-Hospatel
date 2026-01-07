@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 
 // CORS setup
 app.use(cors({
-  origin: ['https://frontend-hospatel-nky3.vercel.app','https://746b9f9e-6613-4a02-982f-e383b93d42bf-00-3dqja0ihskin7.pike.replit.dev:3000/'],
+  origin: ['https://frontend-hospatel-nky3.vercel.app','https://746b9f9e-6613-4a02-982f-e383b93d42bf-00-3dqja0ihskin7.pike.replit.dev:3000'],
   methods: ['GET','POST','DELETE','PUT','OPTIONS'],
   allowedHeaders: ['Content-Type','Authorization']
 }));

@@ -22,6 +22,7 @@ import User from './routes/user.js';
 import Doctor from './routes/doctor.js';
 import Appointment from './routes/appointment.js';
 import Department from './routes/Departments.js';
+import Illness from './routes/illness.js';
 
 // Routes
 app.use('/user', User);
@@ -29,6 +30,7 @@ app.use('/doctors', Doctor);
 app.use('/appointment', Appointment);
 app.use('/departments', Department);
 app.use("/uploads", express.static("uploads"));
+app.use('/illness', Illness)
 
   
 // send requset to the srever in 5 minutes
